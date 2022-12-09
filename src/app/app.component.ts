@@ -8,6 +8,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'my-store';
   widthImg = 10;
   name = 'Nicolas';
   age = 18;
@@ -20,6 +21,11 @@ export class AppComponent {
   }
   names: string[] = ['Nico', 'Juli', 'Santi'];
   newName = '';
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  };
   products: Product[] = [
     {
       name: 'EL mejor juguete',
